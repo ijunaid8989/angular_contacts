@@ -14,6 +14,9 @@ config :sea_evercam_weed, SeaEvercamWeed.Web.Endpoint,
   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
                     cd: Path.expand("../assets", __DIR__)]]
 
+config :sea_evercam_weed,
+  seaweedfs_url: System.get_env["SEAWEEDFS_URL"]
+
 # ## SSL Support
 #
 # In order to use HTTPS in development, a self-signed

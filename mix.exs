@@ -17,7 +17,7 @@ defmodule SeaEvercamWeed.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {SeaEvercamWeed.Application, []},
-     extra_applications: [:logger, :runtime_tools]]
+     extra_applications: [:logger, :runtime_tools, :httpoison, :dotenv]]
   end
 
   # Specifies which paths to compile per environment.
@@ -35,7 +35,10 @@ defmodule SeaEvercamWeed.Mixfile do
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:httpoison, "~> 0.11.2"},
+     {:dotenv, "~> 2.0.0"}
+   ]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.

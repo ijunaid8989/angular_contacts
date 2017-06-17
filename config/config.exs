@@ -17,6 +17,9 @@ config :sea_evercam_weed, SeaEvercamWeed.Web.Endpoint,
   pubsub: [name: SeaEvercamWeed.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+config :sea_evercam_weed,
+  seaweedfs_url: System.get_env["SEAWEEDFS_URL"]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
