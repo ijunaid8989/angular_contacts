@@ -16,7 +16,8 @@ defmodule SeaEvercamWeed.Web.Router do
   scope "/", SeaEvercamWeed.Web do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    # get "/", PageController, :index
+    get "/", SeaweedController, :index
   end
 
   # Other scopes may use custom stacks.
