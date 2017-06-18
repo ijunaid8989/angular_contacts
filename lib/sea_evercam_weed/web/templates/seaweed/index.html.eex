@@ -1,4 +1,4 @@
-<table id="example" class="table table-striped" cellspacing="0" >
+<table id="example" class="table table-striped" cellspacing="0" style="width: 40%;">
   <thead>
       <tr>
           <th>Camera Exid</th>
@@ -7,7 +7,7 @@
   <tbody>
     <%= for camera_names <- @listing_camera_names do %>
       <tr>
-          <td><%= camera_names %></td>
+          <td><a href="#" target="_blank"><%= camera_names %></a></td>
       </tr>
     <% end %>
   </tbody>
