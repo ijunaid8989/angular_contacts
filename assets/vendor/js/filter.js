@@ -1,4 +1,7 @@
 console.log("here");
+$(document).ready(function(){
+    $('#example').DataTable();
+});
 // $('#seach-camera').on( "keyup", function(e) {
 //     e.preventDefault();
 //     var id = $(this).val();
@@ -11,19 +14,23 @@ console.log("here");
 //     });
 // });
 
-var filterImages, onImageSearch;
+// var filterImages, onImageSearch;
 
-filterImages = function(tageValue) {
-  var regex;
-  regex = new RegExp('\\b\\w*' + tageValue + '\\w*\\b');
-  console.log(regex);
-  $('div.card').hide().filter(function() {
-    return regex.test($(this).attr('id'));
-  }).show();
-};
+// filterImages = function(tageValue) {
+//   var regex;
+//   regex = new RegExp('\\b\\w*' + tageValue + '\\w*\\b');
+//   console.log(regex);
+//   $('div.card').hide().filter(function() {
+//     return regex.test($(this).attr('id'));
+//   }).show();
+// };
 
-$('#seach-camera').keyup(function() {
-  var selectTag;
-  selectTag = $(this).val();
-  filterImages(selectTag);
-});
+// $('#seach-camera').keyup(function() {
+//   var selectTag;
+//   selectTag = $(this).val();
+//   filterImages(selectTag);
+// });
+
+// $(document).ready(function() {
+//     $('#example').DataTable();
+// } );

@@ -1,17 +1,14 @@
-<div class="center-me">
-
-  <div class="ui icon input drop-by">
-    <input type="text" placeholder="Search..." id="seach-camera">
-    <i class="search icon"></i>
-  </div>
-
-  <div class="ui cards">
+<table id="example" class="table table-striped" cellspacing="0" >
+  <thead>
+      <tr>
+          <th>Camera Exid</th>
+      </tr>
+  </thead>
+  <tbody>
     <%= for camera_names <- @listing_camera_names do %>
-      <div id="<%= camera_names %>" class="card">
-        <div class="content">
-          <div class="header"><i class="folder outline icon"></i> <%= camera_names %></div>
-        </div>
-      </div>
+      <tr>
+          <td><%= camera_names %></td>
+      </tr>
     <% end %>
-  </div>
-</div>
+  </tbody>
+</table>
